@@ -1,0 +1,86 @@
+/* Soft neutral palette with warm accents */
+
+:root {
+  --offbeat-bg: #f8f7f4;
+  --offbeat-card-bg: #fffdfa;
+  --offbeat-primary: #6c63ff;
+  --offbeat-secondary: #bdbdbd;
+  --offbeat-accent: #ffb385;
+  --offbeat-success: #ff8c42;
+  --offbeat-footer-bg: #f3ede7;
+  --offbeat-navbar-bg: #fffdfa;
+}
+
+body {
+  background-color: var(--offbeat-bg);
+}
+
+.navbar,
+.navbar.bg-white {
+  background-color: var(--offbeat-navbar-bg) !important;
+}
+
+.navbar-brand,
+.text-primary {
+  color: var(--offbeat-primary) !important;
+}
+
+.btn-primary {
+  background-color: var(--offbeat-primary);
+  border-color: var(--offbeat-primary);
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #574fd6;
+  border-color: #574fd6;
+}
+
+.btn-success {
+  background-color: var(--offbeat-success);
+  border-color: var(--offbeat-success);
+  color: #fff;
+}
+.btn-success:hover,
+.btn-success:focus {
+  background-color: #e6761f;
+  border-color: #e6761f;
+}
+
+.bg-light {
+  background-color: var(--offbeat-card-bg) !important;
+}
+
+.card {
+  background-color: var(--offbeat-card-bg);
+  border: none;
+  border-radius: 1rem;
+}
+
+.card-title {
+  color: var(--offbeat-primary);
+}
+
+.card-img-top {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  object-fit: cover;
+  height: 180px;
+  background: var(--offbeat-bg);
+}
+
+footer {
+  background-color: var(--offbeat-footer-bg) !important;
+  color: var(--offbeat-secondary) !important;
+  border-radius: 1rem;
+}
+
+.lead,
+.text-secondary {
+  color: var(--offbeat-secondary) !important;
+}
+
+/* Optional: Add a warm accent border to cards on hover */
+.card:hover {
+  box-shadow: 0 0 0 4px var(--offbeat-accent);
+  transition: box-shadow 0.2s;
+}
